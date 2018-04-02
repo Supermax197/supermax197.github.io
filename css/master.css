@@ -1,0 +1,109 @@
+/*
+  Description: Rodrigo Galindez Master Stylesheet
+  Media: Screen
+  Version: 1.0.0
+  Author: Rodrigo Galindez
+  Author URI: http://www.languageburo.com
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+/* General Elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0 none;
+}
+
+/* Applies a natural box layout model to all elements */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Leitura 2", sans-serif;
+  font-size: 62.5%;
+  color: #333;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Leitura 2';
+    src: url('fonts/LeituraNews-Roman2.woff2') format('woff2'),
+        url('fonts/LeituraNews-Roman2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leitura 4';
+    src: url('fonts/LeituraNews-Roman4.woff2') format('woff2'),
+        url('fonts/LeituraNews-Roman4.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+article {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: 'Leitura 4';
+  font-size: 3em;
+  font-weight: normal;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 2em;
+  line-height: 1.6;
+}
+
+a {
+  color: #0093af;
+  text-decoration: none;
+
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+a:hover {
+  color: #0b6378;
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 1.8em;
+  }
+}
+
+.scale {
+background-size:contain|cover;
+max-width:100%;
+height: auto;
+text-align:center;
+margin:0 auto;
+}
