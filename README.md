@@ -1,2 +1,2 @@
-# Tao VPN Lite
-see <a>https://supermax197.github.io</a>
+# Tao website
+[see website](https://github.com/Supermax197/index.html)
