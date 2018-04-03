@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0" />
+
+		<title>Tao VPN Lite</title>
+
+		<meta name="description" content="Tao VPN Lite website">
+		<link rel="icon" href="img/taoicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/master.css">
+	</head>
+
+	<body>
+
+		<article>
+			<a href="tao_vpn_lite_zh.html">Chinese 中文版</a>
+
+			<h1>Tao VPN Lite</h1>
+
+			<p>Statement: the software is open source software under GNU License, which is only for learning and research purposes. It may not be used for commercial purposes or for illegal use.</p>
+			<p><a href="https://github.com/Supermax197/tao-vpn-lite">Tao VPN Lite github:https://github.com/Supermax197/tao-vpn-lite</a></p>
+			<p>Tao VPN Lite can build private network on public network, make encrypted communication, and enable users to access remotely.</p>
+			<p>Tao VPN Lite  is developed by Java, which is very, very simple, easy to use VPN software and across almost all platforms. No configuration, one key deployment.</p>
+			<p>The network diagram is as follows：</p>
+			<div class="scale"><img class="scale" align="middle" src="img/TaoVPNLiteNet.png" /></div>
+			<p>The architecture model diagram is as follows：</p>
+			<div class="scale"><img class="scale" align="middle" src="img/TaoVPNLiteModel.png" /></div>
+			<p>Tao VPN Lite supports the HTTP and HTTPS protocols. That is to say, it support almost all websites, online games and applications.</p>
+			<p>Tao VPN Lite is developed by Java, which means that almost all platforms can run it, such as windows, Linux, Mac OS, Android, and so on. The client and server can run on different platforms.</p>
+			<p>Tao VPN Lite has its own unique communication encryption system, so it is incompatible 
+				with the traditional VPN software, which makes unique network security and penetration.</p>
+			<p>The use of Tao VPN Lite is very simple. Download the source code, compile it or download the 
+				jar package directly, and start the client's command.：<br /><i>java -cp tao-vpn-lite.jar 
+					org.tao.vnp.lite.client.Client xxx.xxx.xxx.xxx 8082 8081</i><br/>,
+					XXX is the IP address of the VPN service side, the 8082 is the port number of the VPN service side port, and the 8081 is the port number of the VPN client side. Start the server-side command： <br><i>java -cp tao-vpn-lite.jar org.tao.vpn.lite.Server 8082 </i><br>,the 8082 is the port number of the VPN service side port</p>
+			<p>On the Linux server, you can use similar deamon shell to start the server side.，<br><i>#! /bin/sh <br> while true ; do <br> NUM=`ps aux | grep -w tao-pry-1.0.jar | grep -v grep |wc -l` <br> if [ "${NUM}" -lt "1" ];then <br> echo "tao-pry-1.0.jar was killed" <br> nohup java -cp tao-vpn-lite.jar tao-vpn-lite.jar org.tao.vpn.lite.Server 8082 >/dev/null 2>%261 %26 fi
+				<br> sleep 5s <br> done <br> exit 0 </i></p>
+<p>When both the client and the server started, user need to set up the local network agent to point to the IP address and port of the VPN client. Note that only the communication between the VPN client and the VPN server is encrypted, so the VPN client is best to run on your machine.</p>
+			<p>If you are interested or have more demands, you can contact me  <a href="mailto:jeruen@gmail.com">jeruen@gmail.com</a></p>
+			<p>Tao VPN professional version provides multi-user login management, custom symmetric or asymmetric encryption algorithm, such as rsa,ecc etc. it hardly can  be cracked. it is much more stronger than the lite version</p>
+			
+			<p>If you support Tao VPN Lite, you can click the PayPal Button :).</p>
+			 
+			<div class="scale">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="X5ZAA9MDNDEBY">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</div>
+			 
+
+		</article>
+
+	</body>
+
+</html>
