@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0" />
+
+		<title>道VPN精简版</title>
+
+		<meta name="description" content="道VPN精简版的网站">
+		<link rel="icon" href="https://ss0.baidu.com/73t1bjeh1BF3odCf/it/u=1257905426,1656967168&fm=85&s=CB00AA46EC37218E473F966903003055" type="image/x-icon" />
+		<link rel="stylesheet" href="css/master.css">
+	</head>
+
+	<body>
+
+		<article>
+			<a href="index.html">English 英文版</a>
+
+			<h1>道VPN精简版</h1>
+
+			<p>声明：该软件为GNU License开源软件，仅供学习研究用途。不得用于商业目的与非法用途。</p>
+			<p>道VPN Lite版可以在公用网络上建立专用网络，进行加密通讯，让用户进行远程访问。</p>
+			<p>道VPN Lite版是用Java开发的，跨几乎所有平台的，非常非常非常简单易用的VPN软件。无需配置、一键部署。麻雀虽小，五脏俱全。</p>
+			<p>网络图如下：</p>
+			<div class="scale"><img class="scale" align="middle" src="img/TaoVPNLiteNet.png" /></div>
+			<p>架构模型图如下：</p>
+			<div class="scale"><img class="scale" align="middle" src="img/TaoVPNLiteModel.png" /></div>
+			<p>道VPN Lite支持http与https协议。也就是说支持几乎所有网站、网络游戏及应用。</p>
+			<p>道VPN Lite用Java语言开发，这意味着几乎所有平台都可以运行，如windows、linux、mac os、android等，并且客户端、服务端可以运行在不同平台上。</p>
+			<p>道VPN Lite有自己的独特的加密系统，因此与传统VPN软件并不兼容，这也使得道VPN具有独特的网络安全性与穿透性。</p>
+			<p>道VPN Lite的使用非常简单。下载源代码编译或者直接下载jar包，启动客户端的命令：<i>java -cp tao-vpn-lite.jar org.tao.vnp.lite.client.Client xxx.xxx.xxx.xxx 8082 8081</i>,其中xxx是vpn服务端的ip地址，8082是服务端的端口号，8081是vpn客户端的端口号。启动客户端的命令： <i>java -cp tao-vpn-lite.jar org.tao.vpn.lite.Server 8082 </i>,其中8082是服务端的端口号</p>
+			<p>在linux服务器上，可以使用类似的守护shell来启动服务端，<br><i>#! /bin/sh <br> while true ; do <br> NUM=`ps aux | grep -w tao-pry-1.0.jar | grep -v grep |wc -l` <br> if [ "${NUM}" -lt "1" ];then <br> echo "tao-pry-1.0.jar was killed" <br> nohup java -cp tao-vpn-lite.jar tao-vpn-lite.jar org.tao.vpn.lite.Server 8082 >/dev/null 2>%261 %26 fi
+				<br> sleep 5s <br> done <br> exit 0 </i></p>
+			<p>如果你感兴趣或有更高需求，可以联系我 jeruen@gmail.com。</p>
+			<p>道VPN专业版提供多用户登录管理，自定义对称或非对称加密算法，最高可达10的240次方的加密强度，现如今的计算系统无法破解。更强更复杂的功能，满足企业的需求。</p>
+			<p>如果你支持道VPN Lite，可以通过扫描以下二维码或点击paypal按钮进行赞助。</p>
+			<div class="scale"><img style="max-width: 30%;" align="middle" src="img/weixin.png" /></div>
+			<div class="scale"><img style="max-width: 30%;" align="middle" src="img/zhifubao.jpg" /></div>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="X5ZAA9MDNDEBY">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+		</article>
+
+	</body>
+
+</html>
