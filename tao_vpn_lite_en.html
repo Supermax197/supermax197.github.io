@@ -33,10 +33,10 @@
 			<p>Tao VPN Lite has its own unique communication encryption system, so it is incompatible 
 				with the traditional VPN software, which makes unique network security and penetration.</p>
 			<p>The use of Tao VPN Lite is very simple. Download the source code, compile it or download the 
-				jar package directly, and start the client's command.：<br /><i>java -cp tao-vpn-lite.jar 
+				jar package directly, and start the client's command.：<br /><i>java -cp tao-vpn-lite-1.0.jar 
 					org.tao.vnp.lite.client.Client xxx.xxx.xxx.xxx 8082 8081</i><br/>,
-					XXX is the IP address of the VPN service side, the 8082 is the port number of the VPN service side port, and the 8081 is the port number of the VPN client side. Start the server-side command： <br><i>java -cp tao-vpn-lite.jar org.tao.vpn.lite.Server 8082 </i><br>,the 8082 is the port number of the VPN service side port</p>
-			<p>On the Linux server, you can use similar deamon shell to start the server side.，<br><i>#! /bin/sh <br> while true ; do <br> NUM=`ps aux | grep -w tao-pry-1.0.jar | grep -v grep |wc -l` <br> if [ "${NUM}" -lt "1" ];then <br> echo "tao-pry-1.0.jar was killed" <br> nohup java -cp tao-vpn-lite.jar tao-vpn-lite.jar org.tao.vpn.lite.Server 8082 >/dev/null 2>%261 %26 fi
+					XXX is the IP address of the VPN service side, the 8082 is the port number of the VPN service side port, and the 8081 is the port number of the VPN client side. Start the server-side command： <br><i>java -cp tao-vpn-lite-1.0.jar org.tao.vpn.lite.Server 8082 </i><br>,the 8082 is the port number of the VPN service side port</p>
+			<p>On the Linux server, you can use similar deamon shell to start the server side.，<br><i>#! /bin/sh <br> while true ; do <br> NUM=`ps aux | grep -w tao-vpn-lite-1.0.jar | grep -v grep |wc -l` <br> if [ "${NUM}" -lt "1" ];then <br> echo "tao-vpn-lite-1.0.jar was killed" <br> nohup java -cp tao-vpn-lite-1.0.jar org.tao.vpn.lite.Server 8082 >/dev/null 2>%261 %26 fi
 				<br> sleep 5s <br> done <br> exit 0 </i></p>
 <p>When both the client and the server started, user need to set up the local network agent to point to the IP address and port of the VPN client. Note that only the communication between the VPN client and the VPN server is encrypted, so the VPN client is best to run on your machine.</p>
 			<p>If you are interested or have more demands, you can contact me  <a href="mailto:jeruen@gmail.com">jeruen@gmail.com</a></p>
