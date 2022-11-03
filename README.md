@@ -1,2 +1,2 @@
 # Tao website
-[see website](https://github.com/Supermax197/index.html)
+[see website](https://supermax197.github.io)
